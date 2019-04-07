@@ -326,28 +326,19 @@ nav a:hover {
         margin-bottom: 1.2em;
     }
     .card{
-        overflow: hidden;
-        border-radius: 5px;
-        margin-right: 1em;
+        margin-right: .5em;
         min-width: 180px;
         height: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        -webkit-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
-        -moz-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
-        box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
     }
     .card-select{
         position: relative;
         transition: all 0.2s ease 0s;
         top: 0;
-        border-left: .2em solid #eee;   
-        color: #666;
+        border-left: .2em solid transparent;   
         padding-left: .2em;
     }
     .card-select:hover{
-        border-left: .2em solid var(--blue);
-        top: -.5em;
+        border-left: .2em solid transparent;
+        top: 0;
     }
 }
