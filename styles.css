@@ -1,4 +1,8 @@
 /* CSS do Joca ;) */
+:root {
+    --blue: #2695EE;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,16 +34,16 @@ a {
     text-decoration: none;
 }
 span {
-    color: #2695EE;
+    color: var(--blue);
 }
 small {
-    color: #2695EE;
+    color: var(--blue);
 }
 .link{
     color: #999;
 }
 .link:hover{
-    transition: 0.3s;
+    transition: all 0.2s ease 0s;
     color: #333;
     text-decoration: underline;
 }
@@ -74,6 +78,17 @@ header p {
     padding-bottom: 2em;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerpage{
+    height: 70vh;
+    min-height: 450px;
+    justify-content: flex-end;
+}
+
 /* navbar */
 nav {
     position: fixed;
@@ -81,7 +96,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 70px;
     background-color: #1e1e1e;
     z-index: 100;
 }
@@ -93,24 +108,23 @@ nav ul{
 }
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #999;
     margin: 0.5em;
     padding: .8rem 1.2rem;
-    border-bottom: solid 2px transparent;
 }
 nav a:hover {
-    border-bottom: solid #2695EE;
-    transition: 0.2s;
+    color: #fff;
+    transition: all 0.2s ease 0s;
     text-decoration: none;
 }
 .logo {
     height: 50px;
-    margin-left: 1em;
+    margin-left: 1.5em;
 }
 .line{
     height: .2em;
     width: 6em;
-    background-color: #2695EE;
+    background-color: var(--blue);
     margin: 2em 0 1em 0;
 }
 .line-rigth {
@@ -126,22 +140,23 @@ nav a:hover {
     text-decoration: none;
     padding: 1em;
     color: #fff;
-    background-color: #F0C64B;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
-    border: solid 2px #fff;
     top: 0px;
+    margin-bottom: 1em;
 }
 .btn:hover{
-    transition: 0.4s;
+    transition: all 0.2s ease 0s;
     position: relative;
-    background-color: #D0A01A;
+    background-color: rgba(0, 0, 0, 1);
     top: -3px;
 }
 .btn-secundary{
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .btn-secundary:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* colunas */
@@ -158,6 +173,17 @@ nav a:hover {
     padding: .5em 2em;
     border-radius: 5px;
 }
+.col-acenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col-jcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .rowcards{
     overflow-x: scroll;
     display: flex;
@@ -166,27 +192,40 @@ nav a:hover {
 .card{
     overflow: hidden;
     border-radius: 5px;
-    margin: 0 1em 1em 0;
-    min-width: 300px;
-    height: 500px;
+    margin-right: 1em;
+    min-width: 250px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-bottom: solid .2em #fff;
     -webkit-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
     box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
-    position: relative;
 }
-.card:hover{
-    transition: 0.6s;
-    border-bottom: solid .2em #1e1e1e;
-    top: -3px;
+.card-select{
+    position: relative;
+    transition: all 0.2s ease 0s;
+    top: 0;
+    border-left: .2em solid #eee;   
+    color: #666;
+    padding-left: .2em;
+}
+.card-select:hover{
+    border-left: .2em solid var(--blue);
+    top: -.5em;
 }
 .info{
-    padding: 1em;
-    background-color: #fff;
-    color: #666;
+    padding: 1em .5em 0 .5em;
+}
+.perfil {
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+    background-image: url("jocaperfil.jpg");
+    background-size: cover;
+    -webkit-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
 }
 .covproj{
     background-size: cover;
@@ -210,8 +249,28 @@ nav a:hover {
 .proj6{
     background-image: url("proj6.jpg");
 }
+.proj7{
+    background-image: url("proj7.jpg");
+}
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: #999;
+}
+
+/* Responsivo 900px */
 @media only screen and (max-width: 900px) {
+    ::-webkit-scrollbar {
+    height: 4px;
+}
     h1 {
         font-size: 2.6em;
         line-height: 1em;
