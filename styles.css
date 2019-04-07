@@ -59,7 +59,7 @@ section {
 }
 header {
     height: 100vh;
-    background-image: url("bg.jpg");
+    background-image: url("img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -221,7 +221,7 @@ nav a:hover {
     height: 15em;
     width: 15em;
     border-radius: 50%;
-    background-image: url("jocaperfil.jpg");
+    background-image: url("img/jocaperfil.jpg");
     background-size: cover;
     -webkit-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
@@ -232,25 +232,25 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 .proj1{
-    background-image: url("proj1.jpg");
+    background-image: url("img/sites/proj1.jpg");
 }
 .proj2{
-    background-image: url("proj2.jpg");
+    background-image: url("img/sites/proj2.jpg");
 }
 .proj3{
-    background-image: url("proj3.jpg");
+    background-image: url("img/sites/proj3.jpg");
 }
 .proj4{
-    background-image: url("proj4.jpg");
+    background-image: url("img/sites/proj4.jpg");
 }
 .proj5{
-    background-image: url("proj5.jpg");
+    background-image: url("img/sites/proj5.jpg");
 }
 .proj6{
-    background-image: url("proj6.jpg");
+    background-image: url("img/sites/proj6.jpg");
 }
 .proj7{
-    background-image: url("proj7.jpg");
+    background-image: url("img/sites/proj7.jpg");
 }
 
 /* Scrollbar */
@@ -309,6 +309,11 @@ nav a:hover {
     header{
         padding: 0 1em;
     }
+    .headerpage{
+        height: 45vh;
+        min-height: 350px;
+        justify-content: flex-end;
+    }
     section{
         padding: 1em 0;
     }
@@ -319,5 +324,30 @@ nav a:hover {
     .col{
         width: auto;
         margin-bottom: 1.2em;
+    }
+    .card{
+        overflow: hidden;
+        border-radius: 5px;
+        margin-right: 1em;
+        min-width: 180px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        -webkit-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
+        -moz-box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
+        box-shadow: 0px 5px 25px -3px rgba(0,0,0,0.15);
+    }
+    .card-select{
+        position: relative;
+        transition: all 0.2s ease 0s;
+        top: 0;
+        border-left: .2em solid #eee;   
+        color: #666;
+        padding-left: .2em;
+    }
+    .card-select:hover{
+        border-left: .2em solid var(--blue);
+        top: -.5em;
     }
 }
