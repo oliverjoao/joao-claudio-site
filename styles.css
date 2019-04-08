@@ -47,6 +47,7 @@ small {
     text-decoration: underline;
 }
 body {
+    position: relative;
     color: #666;
     line-height: 1.5em;
     font-family: 'Ubuntu', sans-serif;
@@ -127,6 +128,7 @@ nav a:hover {
 }
 .menuicon{
     display: none;
+    z-index: 1000;
 }
 .line{
     height: .2em;

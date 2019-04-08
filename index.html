@@ -11,8 +11,8 @@
             <a href="index.html">
                 <img class="logo" src="img/logo.svg">
             </a>
-            <div class="menuicon" id='saporra' onclick='exibeDiv()'>menu</div>
-            <ul>
+            <a href="#" onclick="toggle_visibility('foo');" class="menuicon">Menu</a>
+            <ul id="foo">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -346,10 +346,13 @@
             <p><small>João Cláudio Designer | 2019</small></p>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
-        <script>
-            function exibeDiv(){
-            var div = document.getElementById("saporra");
-            div.style.display = "flex";
+        <script type="text/javascript">
+            function toggle_visibility(id) {
+                var e = document.getElementById(id);
+                if(e.style.display == 'flex')
+                    e.style.display = 'none';
+                else
+                    e.style.display = 'flex';
             }
         </script>
     </body>
