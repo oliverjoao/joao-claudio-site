@@ -29,6 +29,11 @@ h3 {
     margin-bottom: .5em;
     color: #333;
 }
+h4 {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
 a {
     text-decoration: none;
 }
@@ -52,10 +57,20 @@ body {
     line-height: 1.5em;
     font-family: 'Ubuntu', sans-serif;
 }
+img {
+    width: 100%;
+}
 section {
     padding: 1em 1em 2em;
     display: flex;
     justify-content: center;
+}
+.sectionpost {
+    margin: 3em 1em; 
+    flex-direction: column;
+    width: 100%;
+    max-width: 750px;
+
 }
 header {
     height: 100vh;
@@ -74,11 +89,20 @@ header {
 header h1, p {
     max-width: 350px;
 }
+.headerpage h1, p {
+    max-width: 800px;
+}
 header p {
     padding-bottom: .8em;
 }
 header .btn {
     margin-bottom: 2em;
+}
+header .link {
+    color: #fff;
+}
+header .link:hover {
+    color: #ccc;
 }
 footer{
     padding: 2em;
@@ -121,6 +145,16 @@ nav a:hover {
     color: #fff;
     transition: all 0.2s ease 0s;
     text-decoration: none;
+}
+.action{
+    padding: 1em;
+    background-color: #2695EE;
+    color: #fff;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 500;
+    bottom: 1em;
+    right: .5em;
 }
 .logo {
     height: 50px;   
@@ -312,7 +346,9 @@ nav a:hover {
 .brand13{
     background-image: url("img/branding/brand13.jpg");
 }
-
+.post1{
+    background-image: url("img/ifdesignbg.jpg");
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;

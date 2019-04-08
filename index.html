@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script src="https://unpkg.com/feather-icons"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>João Cláudio  - Início</title>
@@ -11,7 +12,7 @@
             <a href="index.html">
                 <img class="logo" src="img/logo.svg">
             </a>
-            <a href="#" onclick="toggle_visibility('foo');" class="menuicon">Menu</a>
+            <a href="#" onclick="toggle_visibility('foo');" class="menuicon"><i data-feather="menu"></i></a>
             <ul id="foo">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -19,6 +20,9 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <div class="action">
+            <i data-feather="message-square"></i>
+        </div>
         <header>
             <h1>Pronto pra dar um up no seu negócio?</h1>
             <p>Brading de marca, desenvolvimento de sites, estratégias de marketing e muito mais.</p>
@@ -319,7 +323,7 @@
                         <br><small><a href="#" class="link">#design</a> <a href="#" class="link">#ifdesign</a> <a href="#" class="link">#brasileiros</a> <a href="#" class="link">#alemanha</a></small> 
                         <br><small>Fonte: Gazeta do povo</small>
                     </p>
-                    <a href="https://www.gazetadopovo.com.br/haus/design/brasileiros-vao-para-a-alemanha-receber-o-oscar-do-design-if-design-award-2019/" class="link" target="_blank">Ver artigo &#x2192;</a>
+                    <a href="post.html" class="link">Ver artigo &#x2192;</a>
                 </div>
                 <div class="col">
                     <small>13 de mar de 2019</small>
@@ -343,7 +347,7 @@
         </section>
         <a href="blog.html" class="line-rigth link">Ver mais artigos &#x2192;</a>
         <footer>
-            <p><small>João Cláudio Designer | 2019</small></p>
+            <h4>João Cláudio Designer | 2019</h4>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
         <script type="text/javascript">
@@ -354,6 +358,9 @@
                 else
                     e.style.display = 'flex';
             }
+        </script>
+        <script>
+        feather.replace()
         </script>
     </body>
 </html>
