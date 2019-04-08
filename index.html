@@ -10,6 +10,8 @@
         <nav>
             <a href="index.html">
                 <img class="logo" src="img/logo.svg">
+            </a>
+            <div class="menuicon" id='saporra' onclick='exibeDiv()'>menu</div>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -343,5 +345,12 @@
         <footer>
             <p><small>João Cláudio Designer | 2019</small></p>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+        <script>
+            function exibeDiv(){
+            var div = document.getElementById("saporra");
+            div.style.display = "flex";
+            }
+        </script>
     </body>
 </html>
