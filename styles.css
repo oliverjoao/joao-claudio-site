@@ -231,6 +231,8 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Imagens dos sites */
 .proj1{
     background-image: url("img/sites/proj1.jpg");
 }
@@ -251,6 +253,47 @@ nav a:hover {
 }
 .proj7{
     background-image: url("img/sites/proj7.jpg");
+}
+
+/* Imagens de branding */
+.brand1{
+    background-image: url("img/branding/brand1.jpg");
+}
+.brand2{
+    background-image: url("img/branding/brand2.jpg");
+}
+.brand3{
+    background-image: url("img/branding/brand3.jpg");
+}
+.brand4{
+    background-image: url("img/branding/brand4.jpg");
+}
+.brand5{
+    background-image: url("img/branding/brand5.jpg");
+}
+.brand6{
+    background-image: url("img/branding/brand6.jpg");
+}
+.brand7{
+    background-image: url("img/branding/brand7.jpg");
+}
+.brand8{
+    background-image: url("img/branding/brand8.jpg");
+}
+.brand9{
+    background-image: url("img/branding/brand9.jpg");
+}
+.brand10{
+    background-image: url("img/branding/brand10.jpg");
+}
+.brand11{
+    background-image: url("img/branding/brand11.jpg");
+}
+.brand12{
+    background-image: url("img/branding/brand12.jpg");
+}
+.brand13{
+    background-image: url("img/branding/brand13.jpg");
 }
 
 /* Scrollbar */
