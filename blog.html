@@ -11,7 +11,7 @@
             <a href="index.html">
                 <img class="logo" src="img/logo.svg">
             </a>
-            <a href="#" onclick="toggle_visibility('foo');" class="menuicon">Menu</a>
+            <a href="#" onclick="toggle_visibility('foo');" class="menuicon"><i data-feather="menu"></i></a>
             <ul id="foo">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -19,6 +19,7 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <a href="contato.html" target="_black" class="action"><i data-feather="message-square"></i></a>
         <header class="headerpage">
             <h1>Blog</h1>
             <p>Quer saber as novidades relevantes do universo do design, web, marketing e desenvolvimento? Chega ai!</p>
@@ -61,5 +62,17 @@
          <footer>
              <p><small>João Cláudio Designer | 2019</small></p>
          </footer>
+         <script type="text/javascript">
+            function toggle_visibility(id) {
+                var e = document.getElementById(id);
+                if(e.style.display == 'flex')
+                    e.style.display = 'none';
+                else
+                    e.style.display = 'flex';
+            }
+        </script>
+        <script>
+        feather.replace()
+        </script>
      </body>
  </html>
