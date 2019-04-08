@@ -103,7 +103,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #1e1e1e;
-    z-index: 100;
+    z-index: 200;
 }
 nav ul{
     display: flex;
@@ -364,6 +364,7 @@ nav a:hover {
         align-items: center;
         justify-content: center;
         background-color: #1e1e1e;
+        top: 0;
     }
     nav a {
         text-decoration: none;
