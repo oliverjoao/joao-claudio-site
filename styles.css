@@ -74,7 +74,10 @@ header h1, p {
     max-width: 350px;
 }
 header p {
-    padding-bottom: 2em;
+    padding-bottom: .8em;
+}
+header .btn {
+    margin-bottom: 2em;
 }
 footer{
     padding: 2em;
@@ -349,6 +352,12 @@ nav a:hover {
     }
     header{
         padding: 0 1em;
+    }
+    header p {
+        padding-bottom: .3em;
+    }
+    header .btn {
+        margin-bottom: 1em;
     }
     .headerpage{
         height: 45vh;
