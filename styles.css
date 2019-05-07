@@ -127,11 +127,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #1e1e1e;
     z-index: 200;
-    -webkit-box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.0.5);
-    -moz-box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.05);
-    box-shadow: 0px 5px 15px -3px rgba(0,0,0,0.05);
 }
 nav ul{
     display: flex;
@@ -141,18 +138,12 @@ nav ul{
 }
 nav a {
     text-decoration: none;
-    color: white;
-    margin: 0.2em;
-    padding: .1em 1em;
-}
-nav a i{
-    text-decoration: none;
-    color: red;
-    margin: 0em;
-    padding: 0em;
+    color: #999;
+    margin: 0.5em;
+    padding: .8rem 1.2rem;
 }
 nav a:hover {
-    color: var(--blue);
+    color: #fff;
     transition: all 0.2s ease 0s;
     text-decoration: none;
 }
@@ -359,19 +350,6 @@ nav a:hover {
 .brand13{
     background-image: url("img/branding/brand13.jpg");
 }
-/* Imagens de ui/ix */
-.ui1{
-    background-image: url("img/ui/bora.jpg");
-}
-.ui2{
-    background-image: url("img/ui/quatropatas.jpg");
-}
-.ui3{
-    background-image: url("img/ui/bora.jpg");
-}
-.ui4{
-    background-image: url("img/ui/bora.jpg");
-}
 .post1{
     background-image: url("img/ifdesignbg.jpg");
 }
@@ -424,15 +402,10 @@ nav a:hover {
         width: 100%;
         z-index: 150;
         flex-direction: column;
-        align-items:flex-end;
+        align-items: center;
         justify-content: center;
         background-color: #1e1e1e;
         top: 0;
-    }
-    nav ul li{
-        font-size: 1.5em;
-        padding: 0 1.5em 1em 0;
-        text-transform: uppercase
     }
     nav a {
         text-decoration: none;
@@ -441,7 +414,7 @@ nav a:hover {
         padding: 0;
     }
     nav a:hover {
-        color: var(--blue);
+        color: #fff;
         transition: all 0.2s ease 0s;
         text-decoration: none;
     }
