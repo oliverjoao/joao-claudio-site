@@ -63,6 +63,7 @@ img {
 section {
     padding: 1em 1em 2em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .sectionpost {
@@ -169,6 +170,8 @@ nav a:hover {
     height: 42px;   
     margin: .1em;
     width: auto;
+    position: relative;
+    z-index: 999;
 }
 .menuicon{
     display: none;
