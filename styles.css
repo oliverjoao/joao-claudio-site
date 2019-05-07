@@ -218,7 +218,6 @@ nav a:hover {
 
 /* colunas */
 .row{
-    width: 100%;
     max-width: 1300px;
     padding: 2em 1em;
     display: flex;
@@ -359,6 +358,7 @@ nav a:hover {
 .brand13{
     background-image: url("img/branding/brand13.jpg");
 }
+
 /* Imagens de ui/ix */
 .ui1{
     background-image: url("img/ui/bora.jpg");
@@ -372,12 +372,7 @@ nav a:hover {
 .ui4{
     background-image: url("img/ui/bora.jpg");
 }
-.post1{
-    background-image: url("img/ui1.jpg");
-}
-.post1{
-    background-image: url("img/ifdesignbg.jpg");
-}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
